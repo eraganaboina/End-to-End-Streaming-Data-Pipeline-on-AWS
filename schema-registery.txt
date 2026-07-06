@@ -1,0 +1,155 @@
+    1  clear
+    2  curl -X POST http://localhost:8082/v3/clusters/<cluster-id>/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value":{
+      "id":1,
+      "name":"Harsha",
+      "amount":500
+  }
+}'
+    3  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value":{
+      "id":1,
+      "name":"Harsha",
+      "amount":500
+  }
+}'
+    4  vi etc/kafka-rest/kafka-rest.properties
+    5  cd etc/kafka-rest
+    6  cd confluent
+    7  vi etc/kafka-rest/kafka-rest.properties
+    8  cat  etc/kafka-rest/kafka-rest.properties
+    9  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value": {
+    "type": "JSON",
+    "data": {
+      "id": 1,
+      "name": "Harsha",
+      "amount": 500
+    }
+  }
+}'
+   10  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value": {
+    "type": "JSON",
+    "data": {
+      "id": 1,
+      "name": "Harsha",
+      "amount": 500
+    }
+  }
+}'
+   11  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value": {
+    "type": "JSON",
+    "data": {
+      "id": 1,
+      "name": "Harsha",
+      "amount": 500
+    }
+  }
+}'
+   12  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value": {
+    "type": "JSON",
+    "data": {
+      "id": 1,
+      "name": "Harsha",
+      "amount": 500
+    }
+  }
+}'
+   13  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value": {
+    "type": "JSON",
+    "data": {
+      "id": 1,
+      "name": "Harsha",
+      "amount": 500
+    }
+  }
+}'
+   14  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value": {
+    "type": "JSON",
+    "data": {
+      "id": 1,
+      "name": "Harsha",
+      "amount": 500
+    }
+  }
+}'
+   15  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value": {
+    "type": "JSON",
+    "data": {
+      "id": 1,
+      "name": "Harsha",
+      "amount": 500
+    }
+  }
+}'
+   16  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value": {
+    "type": "JSON",
+    "data": {
+      "id": 1,
+      "name": "Harsha",
+      "amount": 500
+    }
+  }
+}'
+   17  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value": {
+    "type": "JSON",
+    "data": {
+      "id": 1,
+      "name": "Harsha",
+      "amount": 500
+    }
+  }
+}'
+   18  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value": {
+    "type": "JSON",
+    "data": {
+      "id": 1,
+      "name": "Harsha",
+      "amount": 500
+    }
+  }
+}'
+   19  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  "value": {
+    "type": "JSON",
+    "data": {
+      "id": 1,
+      "name": "Harsha",
+      "amount": 500
+    }
+  }
+}'
+   20  history
+   21  history > ../project/rest-message.txt
+   22  cat  ../project/rest-message.txt
+   23  vi  ../project/rest-message.txt
+   24  clear
+   25  ls etc/
+   26  ls -r  etc/
+   27  ls   etc/
+   28  ls etc/confluent-metadata-service
+   29  ls etc/confluent-common
+   30  ls etc/confluent-control-center-fe
+   31  ls etc/confluent-hub-client
+   32  cd confluent-rebalancer
+   33  ls etc/ confluent-rebalancer
+   34  ls etc/confluent-rebalancer
+   35  vi etc/confluent-rebalancer/log4j.properties
+   36  ls etc/kafka-connect-replicator
+   37  cd  etc/schema-registry/
+   38  ls
+   39  vi schema-registry.properties
+   40  cd ..
+   41  bin/schema-registry-start etc/schema-registry/schema-registry.properties
+   42  vi etc/schema-registry/schema-registry.properties
+   43  bin/schema-registry-start etc/schema-registry/schema-registry.properties
+   44  history > schema-registery.txt

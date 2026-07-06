@@ -1,0 +1,15 @@
+    1  clear
+    2  cd confluent
+    3  bin/kafka-topics --create --topic topic1 --partitions 2 --replication-factor 1 --bootstrap-server localhost:9092
+    4  ls
+    5  cd etc
+    6  ls
+    7  ls kafka-rest
+    8  vi kafka-rest.properties
+    9  vi kafka-rest/kafka-rest.properties
+   10  cd ..
+   11  bin/kafka-rest-start etc/kafka-rest/kafka-rest.properties
+   12  vi kafka-rest/kafka-rest.properties
+   13  vi etc/kafka-rest/kafka-rest.properties
+   14  bin/kafka-rest-start etc/kafka-rest/kafka-rest.properties
+   15  history > restapi-commands.txt

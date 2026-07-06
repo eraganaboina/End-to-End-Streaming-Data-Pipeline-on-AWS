@@ -1,0 +1,235 @@
+    1  vi kafka-installtion.sh
+    2  bash kafka-installtion.sh
+    3  clear
+    4  cd confluent
+    5  ls
+    6  vi etc/kafka/zookeeper.properties
+    7  bin/zookeeper-server-start etc/kafka/zookeeper.properties
+    8  history > zookeeper-starting-commands.txt
+    9  vi zookeeper-starting-commands.txt
+   10  clear
+   11  cd confluent
+   12  bin/kafka-topics --create --topic topic1 --partitions 2 --replication-factor 1 --bootstrap-server localhost:9092
+   13  ls
+   14  cd etc
+   15  ls
+   16  ls kafka-rest
+   17  vi kafka-rest.properties
+   18  vi kafka-rest/kafka-rest.properties
+   19  cd ..
+   20  bin/kafka-rest-start etc/kafka-rest/kafka-rest.properties
+   21  vi kafka-rest/kafka-rest.properties
+   22  vi etc/kafka-rest/kafka-rest.properties
+   23  bin/kafka-rest-start etc/kafka-rest/kafka-rest.properties
+   24  history > restapi-commands.txt
+   25  vi restapi-commands.txt
+   26  clear
+   27  curl -X POST http://localhost:8082/v3/clusters/<cluster-id>/topics/orders/records -H "Content-Type: application/json" -d '{
+   28    "value":{
+   29        "id":1,
+   30        "name":"Harsha",
+   31        "amount":500
+   32    }
+   33  }'
+   34  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+   35    "value":{
+   36        "id":1,
+   37        "name":"Harsha",
+   38        "amount":500
+   39    }
+   40  }'
+   41  vi etc/kafka-rest/kafka-rest.properties
+   42  cd etc/kafka-rest
+   43  cd confluent
+   44  vi etc/kafka-rest/kafka-rest.properties
+   45  cat  etc/kafka-rest/kafka-rest.properties
+   46  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+   47    "value": {
+   48      "type": "JSON",
+   49      "data": {
+   50        "id": 1,
+   51        "name": "Harsha",
+   52        "amount": 500
+   53      }
+   54    }
+   55  }'
+   56  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+   57    "value": {
+   58      "type": "JSON",
+   59      "data": {
+   60        "id": 1,
+   61        "name": "Harsha",
+   62        "amount": 500
+   63      }
+   64    }
+   65  }'
+   66  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+   67    "value": {
+   68      "type": "JSON",
+   69      "data": {
+   70        "id": 1,
+   71        "name": "Harsha",
+   72        "amount": 500
+   73      }
+   74    }
+   75  }'
+   76  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+   77    "value": {
+   78      "type": "JSON",
+   79      "data": {
+   80        "id": 1,
+   81        "name": "Harsha",
+   82        "amount": 500
+   83      }
+   84    }
+   85  }'
+   86  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+   87    "value": {
+   88      "type": "JSON",
+   89      "data": {
+   90        "id": 1,
+   91        "name": "Harsha",
+   92        "amount": 500
+   93      }
+   94    }
+   95  }'
+   96  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+   97    "value": {
+   98      "type": "JSON",
+   99      "data": {
+  100        "id": 1,
+  101        "name": "Harsha",
+  102        "amount": 500
+  103      }
+  104    }
+  105  }'
+  106  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  107    "value": {
+  108      "type": "JSON",
+  109      "data": {
+  110        "id": 1,
+  111        "name": "Harsha",
+  112        "amount": 500
+  113      }
+  114    }
+  115  }'
+  116  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  117    "value": {
+  118      "type": "JSON",
+  119      "data": {
+  120        "id": 1,
+  121        "name": "Harsha",
+  122        "amount": 500
+  123      }
+  124    }
+  125  }'
+  126  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  127    "value": {
+  128      "type": "JSON",
+  129      "data": {
+  130        "id": 1,
+  131        "name": "Harsha",
+  132        "amount": 500
+  133      }
+  134    }
+  135  }'
+  136  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  137    "value": {
+  138      "type": "JSON",
+  139      "data": {
+  140        "id": 1,
+  141        "name": "Harsha",
+  142        "amount": 500
+  143      }
+  144    }
+  145  }'
+  146  curl -X POST http://localhost:8082/v3/clusters/uTc3cvL8RwytNuyydl-zAw/topics/orders/records -H "Content-Type: application/json" -d '{
+  147    "value": {
+  148      "type": "JSON",
+  149      "data": {
+  150        "id": 1,
+  151        "name": "Harsha",
+  152        "amount": 500
+  153      }
+  154    }
+  155  }'
+  156  history
+  157  history > ../project/rest-message.txt
+  158  cat  ../project/rest-message.txt
+  159  vi  ../project/rest-message.txt
+  160  clear
+  161  ls etc/
+  162  ls -r  etc/
+  163  ls   etc/
+  164  ls etc/confluent-metadata-service
+  165  ls etc/confluent-common
+  166  ls etc/confluent-control-center-fe
+  167  ls etc/confluent-hub-client
+  168  cd confluent-rebalancer
+  169  ls etc/ confluent-rebalancer
+  170  ls etc/confluent-rebalancer
+  171  vi etc/confluent-rebalancer/log4j.properties
+  172  ls etc/kafka-connect-replicator
+  173  cd  etc/schema-registry/
+  174  ls
+  175  vi schema-registry.properties
+  176  cd ..
+  177  bin/schema-registry-start etc/schema-registry/schema-registry.properties
+  178  vi etc/schema-registry/schema-registry.properties
+  179  bin/schema-registry-start etc/schema-registry/schema-registry.properties
+  180  history > schema-registery.txt
+  181  vi schema-registery.txt
+  182  cd confluent
+  183  bin/kafka-console-consumer
+  184  bin/kafka-console-consumer --topic topic1 --bootstrap-server localhost:9092
+  185  kafka-console-consumer --bootstrap-server localhost:9092 --topic orders --from-beginning
+  186  bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic orders --from-beginning
+  187  history > ../project/consumer-proxy-test.txt
+  188  vi  ../project/consumer-proxy-test.txt
+  189  curl http://localhost:8081/subjects/orders-value/versions/latest
+  190  curl -X POST http://localhost:8081/subjects/orders-value/versions -H "Content-Type: application/vnd.schemaregistry.v1+json" -d @configs/orders_schema.json
+  191  curl -X POST http://localhost:8081/subjects/orders-value/versions -H "Content-Type: application/vnd.schemaregistry.v1+json" -d @configs/orders_data.json
+  192  clear
+  193  curl -X POST http://localhost:8081/subjects/orders-value/versions -H "Content-Type: application/vnd.schemaregistry.v1+json" -d @configs/orders_data1.json
+  194  curl -X POST http://localhost:8081/subjects/orders-value/versions -H "Content-Type: application/vnd.schemaregistry.v1+json" -d @configs/orders_data.json
+  195  unzip confluentinc-kafka-connect-s3-10.5.13.zip
+  196  clear
+  197  unzip confluentinc-kafka-connect-s3-10.5.13.zip
+  198  unzip confluentinc-kafka-connect-s3-12.1.6.zip
+  199  file confluentinc-kafka-connect-s3-12.1.6.zip
+  200  md5sum confluentinc-kafka-connect-s3-12.1.6.zip
+  201  ls -lh confluentinc-kafka-connect-s3-12.1.6.zip
+  202  unzip -t confluentinc-kafka-connect-s3-12.1.6.zip
+  203  tar -xf confluentinc-kafka-connect-s3-12.1.6.zip
+  204  unzip -t confluentinc-kafka-connect-s3-12.1.6.zip
+  205  unzip confluentinc-kafka-connect-s3-12.1.6.zip
+  206  mv confluentinc-kafka-connect-s3-12.1.6 plugins/
+  207  vi etc/config/connect-distributed.properties
+  208  ls etc/config/
+  209  ls
+  210  ls etc/kafka
+  211  vi etc/kafka/connect-distributed.properties
+  212  cd etc/control-center
+  213  cd etc
+  214  ls
+  215  cd confluent-control-center
+  216  ls
+  217  vi control-center.properties
+  218  history > control-center-commnads
+  219  vi  control-center-commnads
+  220  clear
+  221  cd confluent
+  222  ls bin
+  223  clear
+  224  vi configs/schema_orders.json
+  225  curl -X POST http://localhost:8081/subjects/orders-value/versions -H "Content-Type: application/vnd.schemaregistry.v1+json" -d @configs/schema_orders.json
+  226  curl http://localhost:8081/subjects/orders-value/versions/latest
+  227  kafka-console-consumer --bootstrap-server localhost:9092 --topic orders --from-beginning
+  228  bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic orders --from-beginning
+  229  history
+  230  clear
+  231  cd confluent
+  232  vi etc/kafka/server.properties
+  233  bin/kafka-server-start etc/kafka/server.properties
+  234  history
+  235  history >all-commands.txt
