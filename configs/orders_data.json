@@ -1,0 +1,12 @@
+{
+  "value_schema": "{\"type\":\"record\",\"name\":\"Order\",\"fields\":[{\"name\":\"id\",\"type\":\"int\"},{\"name\":\"name\",\"type\":\"string\"},{\"name\":\"amount\",\"type\":\"double\"}]}",
+  "records":[
+    {
+      "value":{
+        "id":1,
+        "name":"Harsha",
+        "amount":500.0
+      }
+    }
+  ]
+}
