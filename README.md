@@ -40,5 +40,4 @@ The project demonstrates how event data generated through REST APIs is validated
 
 ---
 
-## Pipeline Flow
 
