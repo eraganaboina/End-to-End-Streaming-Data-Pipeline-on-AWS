@@ -1,0 +1,6 @@
+    1  cd confluent
+    2  bin/kafka-console-consumer
+    3  bin/kafka-console-consumer --topic topic1 --bootstrap-server localhost:9092
+    4  kafka-console-consumer --bootstrap-server localhost:9092 --topic orders --from-beginning
+    5  bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic orders --from-beginning
+    6  history > ../project/consumer-proxy-test.txt
